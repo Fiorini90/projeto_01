@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODIN - Seu melhor OT server!</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ODIN - Open Tibia Server</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about" title="Ir para sobre o server">Sobre o server</a>
+                    </li>
+                    <li>
+                        <a href="#register" title="Ir para cadastro">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="#register" title="Ir para download">Download</a>
+                    </li>
+                    <li>
+                        <a href="#info" title="Ir para informações">Informações</a>
+                    </li>
+                    <li>
+                        <a href="#contact" title="Ir apra contato">Contato</a>
+                    </li>                     
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <img class="logo" src="./images/logo.jpg" alt="Logo do Tibia">
+            <div>
+                <h2>Sobre o server</h2>
+                <p>
+                    Tibia é um jogo eletrônico de RPG multijogador (MMORPG) gratuito, desenvolvido pela CipSoft. Criado em 1997, é um dos jogos mais antigos do gênero. Nele, os jogadores podem desenvolver as habilidades de seus personagens, buscar tesouros, resolver enigmas e explorar áreas como cidades, masmorras, florestas, desertos, ilhas, praias, minas, etc. Os personagens podem disputar lutas entre si ou com criaturas, tais como monstros, dragões, demônios, orcs, utilizando armas e magias, enquanto os NPCs não podem ser atacados. Ao iniciar o jogo, o seu avatar começa na ilha de Dawnport, uma ilha onde todo jogador deve permanecer até desenvolver habilidades necessárias para o progresso e sobrevivência nos outros mapas do jogo. Quando o jogador atinge o nível 8, ele pode, opcionalmente, escolher a sua vocação e deixar a ilha. Em Dawnport, o jogador familiariza-se com o jogo e aprende muitas coisas sobre o mundo de Tibia, como magia ou usar flechas e espadas. O jogo foi desenvolvido utilizando a linguagem de programação C++ em ambas versões de Windows e GNU/Linux.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="register">
+        <div class="container">
+            <div>
+                <h2>Registre-se</h2>
+                <form id="form-register">
+                    <label for="nick">Nick</label>
+                    <input id="nick" type="text" required/> <br />
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" required/> <br />
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" required/> <br />
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" required/> <br />
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Limpar</button>
+                </form> 
+            </div>
+            <div>
+                <div class="download">
+                <h2>Download</h2>
+                <img src="./images/download.jpg" alt="Imagem para download do jogo">
+                <button type="submit">DOWNLOAD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+        <div class="container">
+            <h2>Informações</h2>
+            <div class="system">
+                <h3>Requisitos do sistema</h3>
+                <p>
+                    O Tibia Client está disponível oficialmente para Windows, no entanto, há também uma versão 64-bits sem suporte para Linux.
+                </p>
+                <p id="min">
+                    Mínimo:
+                </p>
+                <p>
+                    Sistema Operacional: Windows 7
+                </p>
+                <p>
+                    Processador: 1.5 GHz Pentium 4 ou equivalente com suporte SSE2
+                </p>
+                <p>
+                    Memória: 1GB RAM
+                </p>
+                <p>
+                    Gráfico: 128MB; se DirectX 9c ou OpenGL 2.1 não forem suportados, somente o modo software renderer estará disponível (sem efeito de luz)
+                </p>
+                <p>
+                    Hard Drive: min. 150 MB
+                </p>
+                <p id="max">
+                    Recomendado:
+                </p>
+                <p>
+                    Sistema Operacional: Windows 7 ou superior
+                </p>
+                <p>
+                    Processador: 2.5 GHz Intel Core i3 ou equivalente
+                </p>
+                <p>
+                    Memória: 4GB RAM
+                </p>
+                <p>
+                    Gráfico: 512MB; OpenGL 2.1 support
+                </p>
+                <p>
+                    Hard Drive: min. 150 MB
+                </p>
+            </div>
+            <div class="vision">
+                <h3>Visão geral da interface</h3>
+                <img class="start" src="./images/Startscreen.jpg" alt="Interface inicial do jogo">
+                <ol class="interface">
+                    <li>
+                        Game Window (Janela de Jogo) - É onde será mostrada toda a "ação" do jogo. Ela mostrará toda a área que for visível por seu personagem, que é uma pequena parte do continente do jogo. Seu personagem sempre estará no meio.
+                    </li>
+                    <li>
+                        Minimap - Funciona como um radar. Este mapa o guiará durante o jogo. O Minimap é "liberado" conforme você explorar a área. A parte preta significa áreas não exploradas. Você pode visualizar os arredores movendo o Minimap com o mouse sem que esta ação interfira na movimentação do personagem.
+                    </li>
+                    <li>
+                        Barra de Status - É onde serão mostrados seus pontos de vida atuais (em vermelho), e pontos de mana (em azul). Note que no começo você não tem pontos de mana. Ambos status serão aumentados conforme você for avançando no jogo.
+                    </li>
+                    <li>
+                        Inventário - Esta parte da interface mostra o equipamento de seus personagens. Você verá a representação do corpo do personagem ativo, dividido em vários slots (quadros) individuais. Esses slots representam os locais onde os itens podem ser equipados.
+                    </li>
+                    <li>
+                        Controles de Combate - Os controles de combate determinam o comportamento do seu personagem durante uma batalha.
+                    </li>
+                    <li>
+                        Botões - Vários botões adicionais também exibirão novos comandos e informações essenciais ao seu jogo. "Opções" abrirá um menu de configurações gerais, a maioria dos outros abrirá sub-janelas. Clicar em "Parar" fará com que seu personagem pare qualquer ação que esteja fazendo, enquanto o botão "Logout" desconectará seu personagem do jogo.
+                    </li>
+                    <li>
+                        Console - Na parte inferior da tela o console será uma área própria para conversar com outros jogadores e NPCs. A comunicação é organizada em diferentes canais de chat que podem ser ativados clicando no pequeno botão com um ícone de pasta, na parte superior esquerda do console.
+                    </li>
+                    <li>
+                        Cooldown Bar - Na barra de Cooldown você pode ver o tempo de espera até que uma magia ou feitiço de um grupo de magias estará disponível novamente. Você pode ocultar a barra cooldown no menu de opções em Geral.
+                    </li>
+                    <li>
+                        Actions Bars - As barras de ações podem ser usadas para atribuir objetos, feitiços, texto ou teclas de atalho para diferentes ações no jogo. Para atribuir objetos, simplesmente arraste e solte-os com o mouse em um dos botões de ação. Você também pode arrastar feitiços da sua lista de magias para um botão de ação. Para atribuir textos e hotkeys ou para editar os botões já atribuídos, basta clicar com o botão direito do mouse no botão de ação e escolher a opção desejada. No menu Opções Barra de ação, você tem várias opções para ajustar suas barras de ação.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form id="form-contact">
+                        <label for="nick">Nick</label>
+                        <input id="nick" type="text" required/> <br />
+                        <label for="name">Nome</label>
+                        <input id="name" type="text" required/> <br />
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" required/> <br />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar ticket</button>
+                    </form>>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagran">
+                                <img src="./images/instagram.png" alt="Logo do Instagran" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./images/facebook.png" alt="Logo do Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                                <img src="./images/youtube.png" alt="Logo do Youtube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; ODIN OT Server - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>      
+</body>
+</html>
